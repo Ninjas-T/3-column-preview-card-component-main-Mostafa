@@ -5,8 +5,9 @@
   color: #e5e5e5;
 }
 body {
-  background-color: #f2f2f2;
+  background-color: hsl(0, 0%, 95%);
 }
+
 #container-cards {
   width: 90%;
   margin: 60px auto;
@@ -14,58 +15,94 @@ body {
 }
 /***********************     Start Card     **********************************/
 .card {
-  height: 435px;
+  height: 430px;
   padding: 40px;
+  width: 100%;
 }
 .card-title {
-  margin-top: 12%;
-  font-size: 30px;
-  color: #ffeede;
+  margin-top: 28px;
+  font-size: 35px;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
 }
 .card-text {
-  margin: 30px auto 0;
+  margin-top: 25px;
   line-height: 25px;
-  width: 265px;
+  width: 260px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 .card-button {
   width: 150px;
   height: 45px;
   margin-top: 40px;
   border-radius: 30px;
-  border: #e5e5e5;
-  background-color: #e5e5e5;
+  border: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
   font-size: 1rem;
+  cursor: pointer;
 }
 /***********************      specifically sedans      **********************************/
 #sedans {
-  background-color: #e28525;
+  background-color:  hsl(31, 77%, 52%);
+  border-radius: 15px 15px 0 0;
 }
 #sedans button {
-  color: #e28525;
+  color:  hsl(31, 77%, 52%);
 }
 #sedans button:hover {
-  background-color: #e28525;
-  color: #e5e5e5;
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
 }
 /***********************      specifically suvs      **********************************/
 #suvs {
-  background-color: #016972;
+  background-color:  hsl(184, 100%, 22%);
 }
 #suvs button {
-  color: #016972;
+  color:  hsl(184, 100%, 22%);
 }
 #suvs button:hover {
-  background-color: #016972;
-  color: #e5e5e5;
+  background-color:  hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
 }
 /***********************      specifically luxury      **********************************/
 #luxury {
-  background-color: #00403f;
+  background-color: hsl(179, 100%, 13%);
+
+  border-radius: 0px 0px 15px 15px;
 }
 #luxury button {
-  color: #00403f;
+  color: hsl(179, 100%, 13%);
 }
 #luxury button:hover {
-  background-color: #00403f;
-  color: #e5e5e5;
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+/*********************Start media 768**********************************/
+@media screen and (min-width: 768px) {
+  #container-cards {
+    width: 55%;
+  }
+  .card{
+    padding: 60px;
+  }
+}
+/************************Start media 1024*******************************/
+@media screen and (min-width: 1024px) {
+  #container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    border-radius: 15px;
+    /* border: 2px solid red; */
+  }
+  div.card {
+    width: calc(100% / 3);
+  }
+  #sedans {
+    border-radius: 15px 0 0 15px;
+  }
+  #luxury {
+    border-radius: 0 15px 15px 0;
+  }
 }
