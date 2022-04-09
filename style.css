@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #e5e5e5;
+}
+body {
+  background-color: #f2f2f2;
+}
+#container-cards {
+  width: 90%;
+  margin: 60px auto;
+  border-radius: 15px;
+}
+/***********************     Start Card     **********************************/
+.card {
+  height: 435px;
+  padding: 40px;
+}
+.card-title {
+  margin-top: 12%;
+  font-size: 30px;
+  color: #ffeede;
+}
+.card-text {
+  margin: 30px auto 0;
+  line-height: 25px;
+  width: 265px;
+}
+.card-button {
+  width: 150px;
+  height: 45px;
+  margin-top: 40px;
+  border-radius: 30px;
+  border: #e5e5e5;
+  background-color: #e5e5e5;
+  font-size: 1rem;
+}
+/***********************      specifically sedans      **********************************/
+#sedans {
+  background-color: #e28525;
+}
+#sedans button {
+  color: #e28525;
+}
+#sedans button:hover {
+  background-color: #e28525;
+  color: #e5e5e5;
+}
+/***********************      specifically suvs      **********************************/
+#suvs {
+  background-color: #016972;
+}
+#suvs button {
+  color: #016972;
+}
+#suvs button:hover {
+  background-color: #016972;
+  color: #e5e5e5;
+}
+/***********************      specifically luxury      **********************************/
+#luxury {
+  background-color: #00403f;
+}
+#luxury button {
+  color: #00403f;
+}
+#luxury button:hover {
+  background-color: #00403f;
+  color: #e5e5e5;
+}
